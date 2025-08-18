@@ -1,0 +1,19 @@
+{
+  "condition": {
+    "type": "mantle:tag_filled",
+    "tag": "forge:molten_aluminum_brass"
+  },
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "type": "tconstruct:material",
+    "item": "tconstruct:bow_grip"
+  },
+  "cast_consumed": true,
+  "cooling_time": 57,
+  "fluid": {
+    "amount": 90,
+    "tag": "forge:molten_aluminum_brass"
+  },
+  "result": "randomtinkerstweaks:aluminum_brass_bow_grip_cast",
+  "switch_slots": true
+}

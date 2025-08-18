@@ -1,0 +1,14 @@
+{
+  "condition": {
+    "type": "mantle:tag_filled",
+    "tag": "forge:molten_aluminum_brass"
+  },
+  "type": "tconstruct:casting_table",
+  "cooling_time": 57,
+  "fluid": {
+    "amount": 90,
+    "tag": "forge:molten_aluminum_brass"
+  },
+  "result": "randomtinkerstweaks:aluminum_brass_blank_cast",
+  "switch_slots": true
+}

@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:molding_table",
+  "material": {
+    "tag": "tconstruct:casts/red_sand"
+  },
+  "pattern": {
+    "type": "tconstruct:material",
+    "item": "randomtinkerstweaks:shovel_head"
+  },
+  "result": "randomtinkerstweaks:red_sand_shovel_head_cast"
+}

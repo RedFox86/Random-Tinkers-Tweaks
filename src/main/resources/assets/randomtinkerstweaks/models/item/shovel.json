@@ -1,0 +1,37 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "head": "randomtinkerstweaks:item/shovel_tool_head",
+    "tool_binding": "randomtinkerstweaks:item/shovel_tool_binding",
+    "handle": "randomtinkerstweaks:item/shovel_tool_handle"
+  },
+  "parts": [
+    {
+      "name": "handle",
+      "index": 2
+    },
+    {
+      "name": "tool_binding",
+      "index": 1
+    },
+    {
+      "name": "head",
+      "index": 0
+    }
+  ],
+  "overrides": [
+    {
+      "predicate": {
+        "tconstruct:charging": 2
+      },
+      "model": "randomtinkerstweaks:item/shovel_blocking"
+    },
+    {
+      "predicate": {
+        "tconstruct:broken": 1
+      },
+      "model": "randomtinkerstweaks:item/shovel_broken"
+    }
+  ]
+}

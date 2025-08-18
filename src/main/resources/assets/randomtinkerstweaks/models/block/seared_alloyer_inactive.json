@@ -1,0 +1,6 @@
+{
+  "parent": "randomtinkerstweaks:block/seared_alloyer",
+  "textures": {
+    "front": "randomtinkerstweaks:block/seared_alloyer_inactive"
+  }
+}

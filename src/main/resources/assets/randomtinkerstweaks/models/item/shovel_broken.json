@@ -1,0 +1,23 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "head": "randomtinkerstweaks:item/shovel_tool_head_broken",
+    "tool_binding": "randomtinkerstweaks:item/shovel_tool_binding",
+    "handle": "randomtinkerstweaks:item/shovel_tool_handle"
+  },
+  "parts": [
+    {
+      "name": "handle",
+      "index": 2
+    },
+    {
+      "name": "binding",
+      "index": 1
+    },
+    {
+      "name": "head",
+      "index": 0
+    }
+  ]
+}
