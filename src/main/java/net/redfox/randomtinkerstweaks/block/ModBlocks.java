@@ -4,6 +4,7 @@ import java.util.function.Supplier;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -23,7 +24,8 @@ public class ModBlocks {
           "seared_alloyer",
           () ->
               new SearedAlloyerBlock(
-                  BlockBehaviour.Properties.copy(TinkerSmeltery.scorchedAlloyer.get())));
+                  BlockBehaviour.Properties.copy(TinkerSmeltery.scorchedAlloyer.get())
+                      .sound(SoundType.METAL)));
 
   public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
     RegistryObject<T> toReturn = BLOCKS.register(name, block);
