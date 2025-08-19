@@ -216,63 +216,14 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 spotless {
-    def globalExcludes = [
-        '**/build/**',
-        '**/bin/**',
-        '**/.gradle/**',
-        '**/.idea/**',
-        '**/gradle/**',
-        '**/libs/**',
-        '**/run/**',
-        '**/run-data/**'
-    ]
-
     java {
         target fileTree('.') {
-            include '**/*.java'
+            include 'src/*.java'
         }
-        targetExclude(globalExcludes)
         toggleOffOn()
         googleJavaFormat()
         removeUnusedImports()
         trimTrailingWhitespace()
-        endWithNewline()
-    }
-    groovyGradle {
-        targetExclude(globalExcludes)
-        target fileTree('.') {
-            include '**/*.gradle'
-            exclude '**/build/**', '**/build-*/**', '**/bin/**'
-        }
-        greclipse()
-        indentWithSpaces(4)
-        trimTrailingWhitespace()
-        endWithNewline()
-    }
-    json {
-        targetExclude(globalExcludes)
-        target fileTree('.') {
-            include '**/*.json'
-        }
-        gson().indentWithSpaces(2)
-    }
-    format 'xml', {
-        targetExclude(globalExcludes)
-        target fileTree('.') {
-            include '**/*.xml'
-        }
-        eclipseWtp('xml')
-        trimTrailingWhitespace()
-        indentWithSpaces(2)
-        endWithNewline()
-    }
-    format 'misc', {
-        targetExclude(globalExcludes)
-        target fileTree('.') {
-            include '**/*.md', '**/.gitignore'
-        }
-        trimTrailingWhitespace()
-        indentWithSpaces(2)
         endWithNewline()
     }
 }
